@@ -1,0 +1,32 @@
+version: '3.0'
+
+services:
+
+  wordpress:
+    container_name: reitz-website
+    depends_on:
+      - db
+    image: wordpress:latest
+    ports:
+      - 8080:80
+    volumes:
+      - ./theme:/var/www/html/wp-content/themes
+    environment:
+      WORDPRESS_DB_HOST: database
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: toor
+      WORDPRESS_DB_NAME: wordpress
+    networks:
+      - wordpress
+
+  db:
+    image: mariadb:latest
+    container_name: database
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=toor
+    networks:
+      - wordpress
+
+networks:
+  wordpress:

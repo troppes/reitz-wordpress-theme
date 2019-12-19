@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 184 193" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-174.106,-155.105)">
+        <g id="Logo_light" transform="matrix(1,0,0,1,-238.104,-3.2617)">
+            <g transform="matrix(0.373704,0,0,0.373704,157.843,11.1448)">
+                <g transform="matrix(3.38447,0,0,2.7657,-2406.67,-869.942)">
+                    <ellipse cx="984.661" cy="538.673" rx="68.318" ry="76.622" style="fill-opacity:0;stroke:white;stroke-width:9.06px;"/>
+                </g>
+                <g transform="matrix(0.873791,4.67086e-17,0,0.83844,1.32246,120.849)">
+                    <rect x="1114.69" y="511.586" width="58.882" height="271.007" style="fill:white;stroke:white;stroke-width:12.5px;"/>
+                </g>
+                <g transform="matrix(1,0,0,1,28.5222,-3.01956)">
+                    <path d="M990.568,527.859L862.746,527.859L862.746,575.663L923.137,575.663L923.137,636.054L862.746,636.054L862.746,781.749L802.354,781.749L802.354,467.713L802.599,467.713L802.599,467.468L990.568,467.468L990.568,527.859Z" style="fill:white;stroke:white;stroke-width:10.7px;"/>
+                </g>
+            </g>
+            <g transform="matrix(1,0,0,1,8.27456,-2.33737)">
+                <text x="412.025px" y="352.642px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:30px;fill:white;">Florian Reitz</text>
+            </g>
+        </g>
+    </g>
+</svg>
