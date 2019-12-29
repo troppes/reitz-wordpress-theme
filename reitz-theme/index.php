@@ -27,12 +27,7 @@
         <li class="waves-effect"><a href="<?php previous_posts_link('Next'); ?>"><i class="material-icons">chevron_right</i></a>
         </li>
     </ul>
-
-
-
-
 </div>
-
 
 
 <?php get_footer(); ?>
