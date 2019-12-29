@@ -8,8 +8,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <title><?php echo get_bloginfo( 'name' ); ?></title>
 
