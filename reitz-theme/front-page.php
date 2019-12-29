@@ -88,15 +88,6 @@
     <div class="container section" id="skills">
         <div class="row">
             <div class="col s12">
-                <?php
-                $args = array(
-                    'post_type' => 'add_skills',
-                );
-                $your_loop = new WP_Query($args);
-
-                if ($your_loop->have_posts()) : while ($your_loop->have_posts()) :
-                $your_loop->the_post();
-                $meta = get_post_meta($post->ID, 'add_skills', true); ?>
                 <table>
                     <thead>
                     <tr>
@@ -105,17 +96,23 @@
                     </tr>
                     </thead>
                     <tbody>
+                    <?php
+                    $args = array(
+                        'post_type' => 'add_skills',
+                    );
+                    $your_loop = new WP_Query($args);
+
+                    if ($your_loop->have_posts()) : while ($your_loop->have_posts()) :
+                    $your_loop->the_post();
+                    $meta = get_post_meta($post->ID, 'add_skills', true); ?>
                     <tr>
                         <td><?php the_title(); ?></td>
                         <td><?php the_content(); ?></td>
                     </tr>
+                    <?php endwhile; endif; wp_reset_postdata(); ?>
                     </tbody>
                 </table>
             </div>
-            <?php endwhile;
-            endif;
-            wp_reset_postdata(); ?>
-
         </div>
     </div>
 
