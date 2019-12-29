@@ -80,43 +80,43 @@
                         ?>
                     </div>
             </div>
-                <?php endwhile; endif; wp_reset_postdata(); ?>
+            <?php endwhile; endif; wp_reset_postdata(); ?>
 
 
         </div>
     </div>
 
-    <div class="container section" id="me">
+    <div class="container section" id="main_content">
         <div class="row">
-            <div class="col m6 s12 hide-on-med-and-up"><img class="materialboxed responsive-img circle" src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/flo.jpg" alt="Flo"></div>
-            <div class="col m6 s12">
-                <h1>Florian Reitz</h1>
-                <p>Hello, my name is Florian. I currently study computer science at the university of applied science at Trier.
-                    For more information see <a href="https://www.linkedin.com/in/florian-reitz-16a10b150/">LinkedIn.</a></p>
-            </div>
-            <div class="col m6 hide-on-small-only"><img class="responsive-img circle" src="<?php echo get_bloginfo( 'template_directory' );?>/assets/img/flo.jpg" alt="Flo"></div>
+            <?php the_content() ?>
         </div>
     </div>
 
     <div class="container section" id="skills">
         <div class="row">
             <div class="col s12">
+                <?php
+                $args = array(
+                    'post_type' => 'add_skills',
+                );
+                $your_loop = new WP_Query( $args );
+
+                if ( $your_loop->have_posts() ) : while ( $your_loop->have_posts() ) : $your_loop->the_post();
+                $meta = get_post_meta( $post->ID, 'add_skills', true ); ?>
                 <table>
                     <thead>
-                        <tr>
-                            <th>Skills</th>
-                            <th>Tools</th>
-                        </tr>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Level</th>
+                    </tr>
                     </thead>
                     <tbody>
-                    <tr><td>Java, C#</td><td>Photoshop, Illustrator</td></tr>
-                    <tr><td>HTML, CSS, PHP, Javascript, NodeJS, Symfony</td><td>vSphere Hypervisor</td></tr>
-                    <tr><td>MariaDB, Solr</td><td>LaTeX</td></tr>
-                    <tr><td>Server maintenance</td><td>Docker</td></tr>
-                    <tr><td>Englisch (fluent)</td><td>CI/CD</td></tr>
-                    <tr><td>Spanish (beginner)</td><td>Version Control (Git)</td></tr>
+                    <tr><td><?php the_title(); ?></td><td><?php the_content(); ?></td></tr>
                     </tbody>
                 </table>
+            </div>
+            <?php endwhile; endif; wp_reset_postdata(); ?>
+
             </div>
         </div>
     </div>
