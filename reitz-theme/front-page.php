@@ -60,7 +60,7 @@
                             <img src="<?php echo $meta['image']; ?>" class="responsive-img">
                             <span class="card-title" id="project-dark"><?php the_title(); ?></span>
                         </div>
-                        <div class="card-content mywhite-text">
+                        <div class="card-content grey-text text-lighten-4">
                             <p><?php the_content(); ?></p>
                         </div>
                         <?php
