@@ -33,7 +33,7 @@
         <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="left hide-on-med-and-down">
             <?php
-            wp_nav_menu(array('menu' => 'main-menu'));
+                wp_nav_menu(array('menu' => 'main-menu'));
             ?>
         </ul>
     </div>
