@@ -43,7 +43,10 @@
     background-color: rgba(25,100,126,0.9);
 }
 
-
 .light-yellow{
     background:#F3DFC1;
+}
+
+.comment-list .comment .children {
+    padding-left: 10%;
 }
