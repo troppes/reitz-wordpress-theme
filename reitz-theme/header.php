@@ -26,7 +26,7 @@
 <script type="text/javascript" src="<?php echo get_bloginfo('template_directory'); ?>/assets/js/main.js"></script>
 
 <nav>
-    <div class="nav-wrapper myblack">
+    <div class="nav-wrapper nav-black">
         <a href="#" class="brand-logo right"><img
                     src="<?php echo get_bloginfo('template_directory'); ?>/assets/img/logo_light.svg" alt="Logo"
                     width="55px"></a>

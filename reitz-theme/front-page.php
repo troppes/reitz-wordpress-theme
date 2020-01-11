@@ -8,12 +8,13 @@
 
     <div class="parallax-container">
         <div class="row center">
-            <div class="card-panel col s6 offset-s3 myblueOpac">
+            <div class="card-panel col s6 offset-s3 blue-opac">
                 <div class="row center">
                     <p class="col s12 flow-text white-text"> Welcome to my personal Webpage.</p>
                 </div>
                 <div class="row center">
-                    <a href="#main_content" class=" hide-on-small-only btn-large waves-effect waves-light myyellow black-text m12">
+                    <a href="#main_content"
+                       class=" hide-on-small-only btn-large waves-effect waves-light light-yellow black-text m12">
                         More information</a>
                 </div>
             </div>
@@ -26,7 +27,7 @@
     <div class="container section" id="projects">
         <div class="row">
             <div class="col s12 center">
-                <h1 class="myblack-text">Projects</h1>
+                <h1>Projects</h1>
             </div>
         </div>
         <div class="row">
