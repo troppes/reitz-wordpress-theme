@@ -36,5 +36,10 @@
                 wp_nav_menu(array('menu' => 'main-menu'));
             ?>
         </ul>
+        <ul class="sidenav" id="mobile">
+            <?php
+            wp_nav_menu(array('menu' => 'main-menu'));
+            ?>
+        </ul>
     </div>
 </nav>

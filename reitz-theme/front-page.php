@@ -1,11 +1,4 @@
 <?php get_header(); ?>
-
-    <ul class="sidenav" id="mobile">
-        <?php
-        wp_nav_menu(array('menu' => 'landing-page-menu'));
-        ?>
-    </ul>
-
     <div class="parallax-container valign-wrapper">
         <div class="row center">
             <div class="card-panel col s12 blue-opac">
