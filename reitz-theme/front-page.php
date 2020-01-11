@@ -39,7 +39,7 @@
             if ($your_loop->have_posts()) : while ($your_loop->have_posts()) : $your_loop->the_post();
                 $meta = get_post_meta($post->ID, 'add_project', true); ?>
                 <div class="col s12 m4">
-                    <div class="card">
+                    <div class="card hoverable">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img src="<?php echo $meta['image']; ?>" class="responsive-img" alt="project_image">
                         </div>
