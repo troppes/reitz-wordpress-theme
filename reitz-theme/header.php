@@ -25,6 +25,9 @@
         src="<?php echo get_bloginfo('template_directory'); ?>/assets/js/materialize.min.js"></script>
 <script type="text/javascript" src="<?php echo get_bloginfo('template_directory'); ?>/assets/js/main.js"></script>
 
+
+
+
 <nav>
     <div class="nav-wrapper nav-black">
         <a href="#" class="brand-logo right"><img
@@ -38,7 +41,7 @@
         </ul>
         <ul class="sidenav" id="mobile">
             <?php
-            wp_nav_menu(array('menu' => 'main-menu'));
+                wp_nav_menu(array('menu' => 'main-menu'));
             ?>
         </ul>
     </div>

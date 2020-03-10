@@ -1,4 +1,4 @@
-<footer class="nav-black">
+<footer class="nav-black" role="contentinfo">
     <div class="container">
         <div class="row">
             <div class="col l6 s12">

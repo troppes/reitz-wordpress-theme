@@ -1,12 +1,12 @@
 <?php get_header(); ?>
-    <div class="parallax-container valign-wrapper">
+    <div class="parallax-container valign-wrapper" aria-label="Welcome button">
         <div class="row center">
             <div class="card-panel col s12 blue-opac">
                 <div class="row center">
-                    <p class="col s12 flow-text white-text"> Welcome to my personal Webpage.</p>
+                    <p class="col s12 flow-text white-text"> Welcome to my personal website.</p>
                 </div>
                 <div class="row center">
-                    <a href="#main_content"
+                    <a role="button" href="#main_content"
                        class="btn-large waves-effect waves-light light-yellow black-text s12">
                         More information</a>
                 </div>
@@ -17,7 +17,7 @@
     </div>
 
 
-    <div class="container section" id="projects">
+    <div class="container section" id="projects" aria-label="Projects">
         <div class="row">
             <div class="col s12 center">
                 <h1>Projects</h1>
@@ -32,7 +32,7 @@
             if ($your_loop->have_posts()) : while ($your_loop->have_posts()) : $your_loop->the_post();
                 $meta = get_post_meta($post->ID, 'add_project', true); ?>
                 <div class="col s12 m4">
-                    <div class="card hoverable">
+                    <div class="card hoverable" aria-label="<?php the_title(); ?>">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img src="<?php echo $meta['image']; ?>" class="responsive-img" alt="project_image">
                         </div>
@@ -57,20 +57,20 @@
         </div>
     </div>
 
-    <div class="container section" id="main_content">
+    <div class="container section" id="main_content" role="main">
         <div class="row">
             <?php the_content() ?>
         </div>
     </div>
 
-    <div class="container section" id="skills">
+    <div class="container section" id="skills" aria-label="Table of skills">
         <div class="row">
             <div class="col s12">
-                <table>
+                <table role="table">
                     <thead>
                     <tr>
-                        <th>Skill</th>
-                        <th>Level</th>
+                        <th role="columnheader">Skill</th>
+                        <th role="columnheader">Level</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -83,9 +83,9 @@
                     if ($your_loop->have_posts()) : while ($your_loop->have_posts()) :
                         $your_loop->the_post();
                         $meta = get_post_meta($post->ID, 'add_skills', true); ?>
-                        <tr>
-                            <td><?php the_title(); ?></td>
-                            <td><?php the_content(); ?></td>
+                        <tr role="row">
+                            <td role="cell"><?php the_title(); ?></td>
+                            <td role="cell"><?php the_content(); ?></td>
                         </tr>
                     <?php endwhile; endif;
                     wp_reset_postdata(); ?>
