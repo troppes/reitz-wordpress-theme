@@ -1,3 +1,5 @@
+[![Build Status](https://drone.reitz.dev/api/badges/troppes/reitz-wordpress-theme/status.svg)](https://drone.reitz.dev/troppes/reitz-wordpress-theme)
+
 # reitz-wordpress-theme
 The worpress theme of reitz.dev
 
