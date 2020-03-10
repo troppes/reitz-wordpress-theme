@@ -14,7 +14,7 @@ steps:
       - mkdir -p /root/.ssh
       - eval $(ssh-agent -s)
       - bash -c 'ssh-add <(echo "$SSH_PRIVATE_KEY")'
-      - ssh-keyscan -p 2244 -H reitz.dev >> /root/.ssh/known_hosts
+      - ssh-keyscan -p 2244 -H reitz.dev,46.38.234.38 >> /root/.ssh/known_hosts
       - git remote add gitea ssh://git@reitz.dev:2244/flo/reitz-wordpress-theme.git
       - git push gitea
 ---
@@ -36,6 +36,6 @@ server:
 steps:
   - name: pull
     commands:
-      - cd srv/wordpress/themes/reitz-wordpress-theme/
+      - cd /srv/wordpress/themes/reitz-wordpress-theme/
       - git pull origin master
 
