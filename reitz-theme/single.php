@@ -3,7 +3,7 @@
 <div class="container">
 
     <div class="row">
-        <div class="col s9 blog-main">
+        <div class="col s9 blog-main" role="main">
             <?php
             if (have_posts()) : while (have_posts()) : the_post();
                 get_template_part('content-single', get_post_format());
@@ -13,7 +13,7 @@
             endwhile; endif;
             ?>
         </div>
-        <div class="col s3 hide-on-small-and-down sidebar">
+        <div class="col s3 hide-on-small-and-down sidebar" role="complementary">
             <?php get_sidebar(); ?>
         </div>
     </div>
