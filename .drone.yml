@@ -1,24 +1,4 @@
 kind: pipeline
-type: docker
-name: push to Gitea
-
-steps:
-  - name: push
-    image: alpine
-    environment:
-      SSH_PRIVATE_KEY:
-        from_secret: private_key
-    commands:
-      - apk add git
-      - apk add --update openssh-client bash
-      - mkdir -p /root/.ssh
-      - eval $(ssh-agent -s)
-      - bash -c 'ssh-add <(echo "$SSH_PRIVATE_KEY")'
-      - ssh-keyscan -p 2244 -H reitz.dev,46.38.234.38 >> /root/.ssh/known_hosts
-      - git remote add gitea ssh://git@reitz.dev:2244/flo/reitz-wordpress-theme.git
-      - git push gitea
----
-kind: pipeline
 type: ssh
 name: deploy
 
